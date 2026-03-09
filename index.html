@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Roadmap</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        p.subtitle {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .roadmap-step {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--secondary-color);
+            transition: transform 0.2s ease;
+        }
+
+        .roadmap-step:hover {
+            transform: translateX(5px);
+        }
+
+        .roadmap-step h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .step-number {
+            background-color: var(--secondary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DevOps Journey</h1>
+        <p class="subtitle">A Step-by-Step Guide to Mastering DevOps</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="roadmap-step">
+            <h2><span class="step-number">1</span> Learn a Programming Language</h2>
+            <p>Automation requires coding skills. Start with one of these popular languages:</p>
+            <ul>
+                <li>Python (Highly recommended)</li>
+                <li>Go (Golang)</li>
+                <li>Bash / Shell Scripting</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-step">
+            <h2><span class="step-number">2</span> Understand OS & Linux Basics</h2>
+            <p>Servers run on Linux. You need to be comfortable in the terminal.</p>
+            <ul>
+                <li>Basic Terminal Commands (ls, cd, grep, awk)</li>
+                <li>Process Management (top, ps, kill)</li>
+                <li>Networking Basics (DNS, OSI Model, IP, Ports)</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-step">
+            <h2><span class="step-number">3</span> Version Control Systems</h2>
+            <p>Manage your code and infrastructure history.</p>
+            <ul>
+                <li>Git (Commit, Branch, Merge, Rebase)</li>
+                <li>GitHub / GitLab / Bitbucket</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-step">
+            <h2><span class="step-number">4</span> Containers</h2>
+            <p>Package applications so they run identically everywhere.</p>
+            <ul>
+                <li>Docker (Images, Containers, Dockerfile)</li>
+                <li>Docker Compose</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-step">
+            <h2><span class="step-number">5</span> Continuous Integration & Delivery (CI/CD)</h2>
+            <p>Automate testing and deployment pipelines.</p>
+            <ul>
+                <li>GitHub Actions</li>
+                <li>GitLab CI</li>
+                <li>Jenkins</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-step">
+            <h2><span class="step-number">6</span> Cloud Providers</h2>
+            <p>Where your infrastructure actually lives.</p>
+            <ul>
+                <li>Amazon Web Services (AWS) - EC2, S3, IAM, VPC</li>
+                <li>Microsoft Azure</li>
+                <li>Google Cloud Platform (GCP)</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-step">
+            <h2><span class="step-number">7</span> Infrastructure as Code (IaC)</h2>
+            <p>Provision and manage infrastructure through code.</p>
+            <ul>
+                <li>Terraform (Provisioning)</li>
+                <li>Ansible (Configuration Management)</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-step">
+            <h2><span class="step-number">8</span> Container Orchestration</h2>
+            <p>Manage hundreds or thousands of containers at scale.</p>
+            <ul>
+                <li>Kubernetes (K8s)</li>
+                <li>Helm (Package Manager for K8s)</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-step">
+            <h2><span class="step-number">9</span> Monitoring & Observability</h2>
+            <p>Track performance and catch bugs before users do.</p>
+            <ul>
+                <li>Prometheus & Grafana (Metrics & Dashboards)</li>
+                <li>ELK Stack / Loki (Log Management)</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Stay curious. The DevOps landscape is always evolving.</p>
+    </footer>
+
+</body>
+</html>
