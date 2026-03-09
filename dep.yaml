@@ -19,20 +19,3 @@
          image: yogi6406/my--project 
          ports: 
          - containerPort: 80 
-  
-
---- 
- apiVersion: v1 
- kind: Service 
- metadata: 
-   name: proj1-web-service 
- spec: 
-   type: NodePort 
-   selector: 
-     app: proj1-web 
-   ports: 
-   - protocol: TCP 
-     port: 80            # Service Port 
-     targetPort: 80      # Container Port 
-     nodePort: 30080     # Port exposed externally (30000-32767 range)
-
